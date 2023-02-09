@@ -1,6 +1,6 @@
 # mmdist-java-avx2
 
-Euclidian distance implementation leveraging the Java Vector API and AVX-compatible CPUs. Based on 'https://blog.cloudflare.com/computing-euclidean-distance-on-144-dimensions/'.
+Euclidian distance implementation leveraging the Java Vector API and AVX-compatible CPUs. Inspired on https://blog.cloudflare.com/computing-euclidean-distance-on-144-dimensions/.
 
 ## Prerequisites
 
