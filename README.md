@@ -28,7 +28,7 @@ $ gradle jmh
 ## Benchmarking options 
 
 The Java Microbenchmark Harness (JMH) plugin for Gradle exposes a substantial number of options that allow customizing the benchmarking.
-Please refer to 'jmh' section within the 'build.gradle' file. For more information refer to 'https://github.com/melix/jmh-gradle-plugin#configuration-options'.
+Please refer to 'jmh' section within the 'build.gradle' file. For more information refer to https://github.com/melix/jmh-gradle-plugin#configuration-options.
 
 
 
