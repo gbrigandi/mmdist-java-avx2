@@ -11,17 +11,18 @@ public class DistanceAvx2 {
     public static int fullDistance(int[] a, int[] b,int len) {
         var upperBound = SPECIES.loopBound(len);
         var i = 0;
-        var e = 0;
+        var f = 0;
+        var vr = IntVector.zero(SPECIES);
 
         for (; i < upperBound; i += SPECIES.length()) {
             var va = IntVector.fromArray(SPECIES, a, i);
             var vb = IntVector.fromArray(SPECIES, b, i);
             var vc = va.sub(vb);
             var vd = vc.mul(vc);
-            e = e + vd.reduceLanes(VectorOperators.ADD);
+            vr = vr.add(vd);
         }
-
-        return e;
+        
+        return vr.reduceLanes(VectorOperators.ADD);
     }
 
 }
