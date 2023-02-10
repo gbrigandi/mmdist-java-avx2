@@ -11,7 +11,6 @@ public class DistanceAvx2 {
     public static int fullDistance(int[] a, int[] b,int len) {
         var upperBound = SPECIES.loopBound(len);
         var i = 0;
-        var f = 0;
         var vr = IntVector.zero(SPECIES);
 
         for (; i < upperBound; i += SPECIES.length()) {
